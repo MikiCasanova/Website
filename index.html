@@ -1,50 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header { 
+  padding: 60px;
+  text-align: center;
+  background: #fa0000;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding-bottom: 30px;
+  text-align: center;
+  background: #ddd;
+  text-size-adjust: 7px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 1%;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+    
+  }
+}
+</style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#section1">Section 1</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
 
-    <!-- Main content -->
-    <div class="container">
-        <div class="row" id="main">
-            <div class="col">
-                <h1>Welcome to our first website</h1>
-                <p>This is a text to greet our visitors.</p>
-            </div>
-        </div>
-        <div class="row" id="section1">
-            <div class="col">
-                <h2>Website title h2</h2>
-                <p>This is a paragraph under the h2 title.</p>
-            </div>
-            <div class="col">
-                <h2>Website title h2</h2>
-                <p>This is a paragraph under the h2 title.</p>
-            </div>
-            <div class="col">
-                <h2>Website title h2</h2>
-                <p>This is a paragraph under the h2 title.</p>
-            </div>
-        </div>
-    </div>
-    <script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.
-js"></script>
+<!-- Note -->
+<div style="background:yellow;padding:5px">
+  <h4 style="text-align:center">OFERTAS MES DE OCTUBRE</h4>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <h1>PCperifericos</h1>
+  <p>Tus <b>PERIFERICOS</b> de confianza</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#monitor">Monitores</a>
+  <a href="#raton">Ratones</a>
+  <a href="#teclado">Teclados</a>
+  <a href="#altavoz">Altavoces</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side"> 
+    <h2>Acerca de nosotros</h2>
+    <h5 style="font-weight: normal;">Bienvenidos a PCperifericos, tu destino ideal para todos los periféricos de ordenador.
+
+      En PCperifericos, entendemos que cada detalle cuenta cuando se trata de potenciar tu experiencia tecnológica. Nos especializamos en ofrecer una amplia gama de periféricos de alta calidad, desde teclados mecánicos y ratones ergonómicos hasta auriculares y monitores, todos diseñados para satisfacer las necesidades de gamers, profesionales y entusiastas de la tecnología.
+      
+      ¿Por qué elegirnos?
+      
+      Calidad Superior: Trabajamos con marcas reconocidas y productos que garantizan durabilidad y rendimiento excepcionales.
+      Asesoría Personalizada: Nuestro equipo de expertos está listo para ayudarte a encontrar el periférico perfecto que se ajuste a tu estilo y necesidades.
+      Innovación Constante: Nos mantenemos al día con las últimas tendencias y tecnologías para ofrecerte siempre lo mejor del mercado.
+      Compromiso con el Cliente: Valoramos tu experiencia, por eso ofrecemos un servicio postventa excepcional y políticas de devolución claras.</h5>
+    <div class="fakeimg" style="height:200px;"><img src="https://img.pccomponentes.com/pcblog/3699/descargar-guia-gratis-perifericos.png" width="350" height="165"></div>
+    <p>ULTIMAS OFERTAS DEL MES DE OCTUBRE</p>
+    <br>
+  
+    <div class= style="height:60px;"><!DOCTYPE html>
+      <html lang="es">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Recuadro de Texto</title>
+          <style>
+              textarea {
+                  width: 300px; /* Ancho del recuadro */
+                  height: 150px; /* Alto del recuadro */
+                  border: 1px solid #ccc; /* Bordes del recuadro */
+                  padding: 10px; /* Espaciado interno */
+                  font-size: 16px; /* Tamaño de fuente */
+              }
+          </style>
+      </head>
+      <body>
+      
+          <h3>Escribe tu opinión sobre nosotros</h3>
+          <textarea placeholder="Escribe aquí..."></textarea>
+      
+      </body>
+      </html></div><br>
+  </div>
+  <div class="main">
+    <h2 id="monitor">MONITOR<MONITORES</h2> 
+    <h5>Monitor gaming- 144hz- Full HD- 1 ms- Negro</h5>
+    <p style="font-weight: normal;font-size: 15px;">Este monitor admite un amplio espectro de colores, el 95% (típ.) de la gama de colores DCI-P3, expresando colores de alta fidelidad para reproducir con VESA DisplayHDR™ 400, lo que permite una inmersión visual realista con colores ricos y mejor nivel de contraste. Independientemente del juego, podrás ver los colores tal y como fueron concebidos.</p> 
+    <div class="fakeimg" style="height:200px;"><img src="https://static2-ecemea.acer.com/media/catalog/product/_/n/_nitro_vg0_vg220q_vg240y_vg270-main1000_um.hv0ee.303.png?quality=80&bg-color=255,255,255&fit=bounds&height=500&width=500&canvas=500:500&format=jpeg" width="230" height="190" ></div>
+    <br>
+    <h4 id="raton">RATÓN<RATONES</h4>
+    <h5>Raton gaming- 61 gramos- Sensor óptico 8500 ppp- Base de teflón</h5>
+    <p style="font-weight: normal;font-size: 15px;" >Tu ratón para gaming de alto rendimiento favorito ofrece más funciones y precisión que nunca. Personaliza la iluminación RGB para que coincida con tu estilo y entorno o sincronízala con otros productos Logitech G. El ratón para gaming de alto rendimiento G502 incluye nuestro sensor óptico HERO 16K de próxima generación para máxima precisión y seguimiento superior.</p>
+    <div class="fakeimg" style="height:200px;"><img src="https://img.pccomponentes.com/articles/21/210655/1677-logitech-g502-lightspeed-raton-gaming-inalambrico-16000dpi-comprar.jpg" width="200" height="165"></div>
+    <br>
+    <h4 id="teclado">TECLADO<TECLADOS</h4>
+    <h5>Teclado gaming- RGB- Red switches- 60% teclado</h5>
+    <p style="font-weight: normal;font-size: 15px;" >Todo conexión. Con la opción de conexión por cable, Bluetooth y 2.4Ghz, este teclado ofrece una libertad total al usuario, permitiendo una experiencia de juego sin interrupciones, ya sea a través de la estabilidad del cable, la conveniencia del Bluetooth o la rápida respuesta del 2.4Ghz. Esta flexibilidad asegura que los jugadores puedan adaptarse a cualquier situación, ya sea en un entorno de juego competitivo o en un uso diario, ofreciendo una conectividad fiable y de alta calidad en cualquier momento y lugar.</p>
+    <div class="fakeimg" style="height:200px;"><img src="https://www.vsgamers.es/thumbnails/product_gallery_large/uploads/products/krom/TECLADOS/kasicTKL/galeria/teclado-gaming-krom-kasic-tkl-rainbow-galeria-3-version-962e4bd6297cb978fa7167b3698e46.jpg" width="220" height="175"></div>
+    <br>
+    <p id="altavoz">ALTAVOZ<ALTAVOCES</p>
+    <h5>Altavoces Gaming- Audio máxima resolución- Nivel de ruido: 25dB</h5>
+    <p style="font-weight: normal;font-size: 15px;" >Versatilidad sin distorsión. Los Edifier R1700BT son tan versátiles que responden perfectamente con cualquier dispositivo: desde tu televisión, a tu ordenador pasando por tu videoconsola o tablet. Estos altavoces de estantería, Edifier R1700BT incorporan DSP o procesamiento de señal digital y DRC o control de rango dinámico que evita las distorsiones y reduce la relación señal-ruido.</p>
+    <div class="fakeimg" style="height:200px;"><img src="https://m.media-amazon.com/images/I/611Al+ATPFL._AC_UF894,1000_QL80_.jpg" width="210" height="160"></div>
+   
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <div>PCperifericos. Desde 2005 somos expertos en informática y electrónica. Buscamos innovar, descubrir y responder día a día a las últimas necesidades de la comunidad más tecnológica.</div>
+</div>
+
 </body>
 </html>
+
+      
